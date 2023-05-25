@@ -74,7 +74,7 @@ const INDEXES = [
 
   // Team Members
   ...indexTeamMembers(
-    ["Nintai Dick", "Bibiche Tchinda", "Okechukwu Obiakor", "Nadege Tabi", "Omoteso Olulanke","Valentine Githae", "Neng Cindy", "Ajua Columbus", "Innocent Ikpetha", "Rebecca Adeola"],
+    ["Nintai Dick", "Bibiche Tchinda", "Okechukwu Obiakor", "Nadege Tabi", "Omoteso Olulanke","Valentine Githae", "Ajua Columbus", "Innocent Ikpetha", "Rebecca Adeola"],
     "Team Member",
   ),
 
