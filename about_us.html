@@ -1,122 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script defer src="assets/js/index.js"></script>
+
     <title>About Us</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main class="layout">
-        <div class="app">
-            <div class="header">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand fw-bolder mx-5" href="#">Pathfinders</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html#achievements">Achievements</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html#faqs">FAQs</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About us</a>
-                          </li>
+      <div class="app">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid bg-light px-0 mx-0">
+                  <a class="navbar-brand fw-bolder" href="#">Pathfinders</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#achievements">Achievements</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#faqs">FAQs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                      </li>
 
 
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 rounded-0" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-dark rounded-0" type="submit"><span class="px-3">Search</span></button>
-                          </form>
+                    </ul>
+                    <div class="d-flex position-relative" role="search" style="min-width:250px;overflow: visible;">
+                        <input class="form-control rounded-0 w-100 search-input" type="search" value="" placeholder="Search" aria-label="Search">
+                        <div class="d-none w-100 position-absolute search-box bg-light z-3  p-3 rounded-1 bg-body">
 
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content">
+          <div class="content-header"></div>
+
+          <div class="main">
+            <section class="py-0">
+              <div class="position-relative row gx-0">
+                <img
+                  src="assets/images/about_us.jpg"
+                  alt=""
+                  class="col-12 mg-fluid"
+                  style="height: 500px"
+                />
+                <div class="w-100 position-absolute bottom-0 left-0 col-12">
+                  <img
+                    src="assets/images/landing_image_mask.png"
+                    alt=""
+                    style="height: 500px"
+                    class="col-12"
+                  />
+                </div>
+
+                <div
+                  class="position-absolute top-0 left-0 px-4 text-white col-sm-12 col-md-6"
+                  style="margin-top: 200px"
+                >
+                  <h1 class="text-whit page-title">About Us</h1>
+                  <p class="my-3 sub sub-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae expedita vel voluptate a, vitae exercitationem !
+                  </p>
+                  <div>
+                    <button class="btn btn-lg btn-light rounded-0 shadow">
+                      <span span="px-4">Meet the team</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="px-0 mx-0 bg-light" id="what-we-are-about">
+                <div class="row gx-0">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h2 class="text-center">What We Are About</h2>
+                        <img src="assets/images/heading-underline.png" alt="" width="100px">
+                    </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-wrap section-content"
+                  >
+                    <div style="max-width: 500px;">
+                      <img
+                        src="assets/images/about_us_we.jpg"
+                        class="img-fluid rounded shadow"
+                        
+                        alt=""
+                      />
+                    </div>
+
+                    <div style="max-width: 600px;" class="py-4 px-xl-5">
+                      <p class="fs-5 fw-lighter lh-lg">
+                        <strong>Pathfinder</strong> is a sub group of
+                        <strong
+                          ><a
+                            href="https://www.glappy.com/"
+                            target="_blank"
+                            class="text-danger"
+                            >Glappy association</a
+                          ></strong
+                        >.
+                      </p>
+                      <p class="h2 sub" id="what-we-offer">What we offer?</p>
+                      <p class="fs-6 fw-lighter lh-lg">
+                        We offer you the chance to be a part of a fast rising,
+                        forward looking organization where you get the
+                        opportunity of hands-on experience. You can develop your
+                        skills as a Scrum Master, Product owner or Developer.
+                        You will get to interact and learn from many
+                        professional Scrum masters and also get the opportunity
+                        to be a part of a real team where you get to put to
+                        practice the things ou have learnt. In the Pathfinders
+                        group, we take pride in being called a family where we
+                        assist one another to become the best they can be.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section id="rules-we-follow">
+              <div
+                class="w-100 d-flex justify-content-center align-items-center flex-column"
+              >
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="text-center">Rules we follow as a team 🙃</h2>
+                    <img src="assets/images/heading-underline.png" alt="" width="100px">
+                </div>
+                <div style="max-width: 800px;" class="section-content">
+                    <img
+                    src="assets/images/working-agreement.jpg"
+                    class="img-fluid rounded-2"
+                    alt=""
+                    />
+                </div>
+              </div>
+            </section>
+            <section id="team-members">
+              <div class="w-100">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="text-center">Meet Our Team Members</h2>
+                    <img src="assets/images/heading-underline.png" alt="" width="100px">
+                </div>
+                <div
+                  class="w-100 d-flex justify-content-center align-items-center flex-wrap mt-4 section-content"
+                >
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-wrap w-100"
+                  >
+                    <div class="team-member-box shadow rounded" id="team-bibiche">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/bibiche.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Bibiche Tchinda</h5>
+                        <span class="work d-block c-bold">Scrum Master</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
                       </div>
                     </div>
-                </nav>
-            </div>
-
-            <div class="content">
-                <div class="content-header">
+                    <div class="team-member-box shadow rounded" id="team-innocent">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/innocent.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Innocent Ikpetha</h5>
+                        <span class="work d-block c-bold">Secondary Scrum Master</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            >Innocent is hardworking and passionate job seeker with strong organizational skills eager to secure entry-level position as Business Analyst. Ready to help team achieve company goals.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-member-box shadow rounded" id="team-nadege">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/nadege.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Nadege Tabi</h5>
+                        <span class="work d-block c-bold">Product Owner</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-wrap w-100"
+                  >
+                    <div class="team-member-box shadow rounded" id="team-nintai">
+                      <div class="bg-white text-center rounded">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/nintai.jpg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Nintai Dick N.</h5>
+                        <span class="work d-block c-bold">Development Lead</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            >Nintai loves providing simple, optimal and long lasting solutions to problems.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-member-box shadow rounded" id="team-rebecca">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/rebecca.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Rebecca Adeola</h5>
+                        <span class="work d-block c-bold">Developer</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-member-box shadow rounded" id="team-valentine">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/val.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Valentine Githae</h5>
+                        <span class="work d-block c-bold">Developer</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-member-box shadow rounded" id="team-neng">
+                      <div class="bg-white text-center box rounded">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/cindy.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Neng Cindy</h5>
+                        <span class="work d-block c-bold">Developer</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-start justify-content-center flex-wrap"
+                  >
+                    <div class="team-member-box shadow rounded" id="team-omoteso">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/omoteso.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Omoteso Olulanke</h5>
+                        <span class="work d-block c-bold">Tester</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            >Omoteso is a certified Cyber Security Analyst. He also has many years of experience in the financial sector. He is presently transitioning into a Scrum Master, taking advantage of the Glappy initiative.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-member-box shadow rounded" id="team-ajua">
+                      <div class="bg-white text-center rounded box">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/ajua-sm.jpeg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">Ajua Columbus</h5>
+                        <span class="work d-block c-bold">Quality assurance</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team-member-box shadow rounded" id="team-okechukwu">
+                      <div class="bg-white text-center box rounded">
+                        <img
+                          class="img-responsive w-100 rounded-top"
+                          src="team_members/okechekwu.jpg"
+                          height="250px"
+                        />
+                        <h5 class="mt-3 name">"Okechukwu Obiakor"</h5>
+                        <span class="work d-block c-bold">here ?</span>
+                        <div class="mt-4 about p-3">
+                          <span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </section>
 
-                <div class="main">
-                    <section class="position-relative row gx-0">
-                        <img src="landing_image.jpg" alt="" class="col-12" style="height: 500px;">
-                        <div class="w-100 position-absolute bottom-0 left-0 col-12">
-                            <img src="landing_image_mask.png" alt="" style="height: 500px;" class="col-12">
-                        </div>
-                        
-                        <div class="position-absolute top-0 left-0 px-4 text-white col-sm-12 col-md-6" style="margin-top: 200px;">
-                            <h1 class="text-whit page-title">About Us</h1>
-                            <p class="my-3 sub sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita vel voluptate a, 
-                                vitae exercitationem !</p>
-                            <div>
-                                <button class="btn btn-lg btn-light rounded-0 shadow"><span span="px-4">Meet the team</span> </button>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="p-4">
-                        <div class="row px-4">
-                            <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                                <h1>What We Are About</h1>
-                            </div>
-
-                        </div>
-                    </section>
-                    <section class="p-4">
-                        <div class="row px-4">
-                            <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                                <h1>Meet Our Team Members</h1>
-                            </div>
-
-                        </div>
-                    </section>
-
-
-                    <section>
-                        <div class="d-flex justify-content-center align-items-center mb-5">
-                            <button class="btn btn-lg btn-dark p-3 rounded-0 shadow">
-                                <span class="mx-5">Contact Us</span>
-                            </button>
-
-                        </div>
-                    </section>
-
-                    
-
-                </div>
-            </div>
-
-            <div class="container">
-                <footer class="py-3 my-4">
-                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="#achievements" class="nav-link px-2 text-muted">Achievements</a></li>
-                    <li class="nav-item"><a href="#faqs" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="about_us.html" class="nav-link px-2 text-muted">About</a></li>
-                  </ul>
-                  <p class="text-center text-muted">© 2022 Glappy Pathfinders, Inc</p>
-                </footer>
-            </div>
+            <section>
+              <div
+                class="d-flex justify-content-center align-items-center mb-5"
+              >
+                <button class="btn btn-lg btn-dark p-3 rounded-0 shadow">
+                  <span class="mx-5">Contact Us</span>
+                </button>
+              </div>
+            </section>
+          </div>
         </div>
+
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#achievements" class="nav-link px-2 text-muted"
+                  >Achievements</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#faqs" class="nav-link px-2 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a href="about_us.html" class="nav-link px-2 text-muted"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Glappy Pathfinders, Inc</p>
+          </footer>
+        </div>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
